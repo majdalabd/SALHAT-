@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رمز التحقق - نظام حجز الشاليهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>رمز التحقق</h1>
+        </div>
+    </header>
+    <main>
+        <section id="verification-code">
+            <div class="verification-container">
+                <img src="shield-icon.png" alt="رمز حماية" class="icon">
+                <h3>رمز التحقق</h3>
+                <form id="verification-form" action="confirmation.html" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="verification-code" name="verification-code" maxlength="1" required>
+                        <input type="text" id="verification-code" name="verification-code" maxlength="1" required>
+                        <input type="text" id="verification-code" name="verification-code" maxlength="1" required>
+                        <input type="text" id="verification-code" name="verification-code" maxlength="1" required>
+                    </div>
+                    <button type="submit">تأكيد</button>
+                </form>
+                <div class="resend">
+                    <span>إعادة الإرسال خلال:</span>
+                    <span class="timer">02:57</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ نظام حجز الشاليهات - سلطنة عمان</p>
+    </footer>
+</body>
+</html>
