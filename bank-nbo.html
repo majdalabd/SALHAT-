@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البنك الوطني العماني - نظام حجز الشاليهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="nbo-logo.png" alt="NBO Logo" class="logo">
+            <h1>البنك الوطني العماني</h1>
+        </div>
+    </header>
+    <main>
+        <section id="bank-login">
+            <h3>NBO Internet Banking - Personal</h3>
+            <h4>LOGIN TO INTERNET BANKING</h4>
+            <form id="login-form" action="confirmation.html" method="POST">
+                <label for="language">LANGUAGE:</label>
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="arabic">Arabic</option>
+                </select>
+
+                <label for="login-id">LOGIN ID:</label>
+                <input type="text" id="login-id" name="login-id" required>
+                
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">LOGIN</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ البنك الوطني العماني</p>
+    </footer>
+</body>
+</html>
