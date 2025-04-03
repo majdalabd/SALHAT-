@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفاتورة - نظام حجز الشاليهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>حكومة سلطنة عمان</h1>
+            <h2>نظام حجز الشاليهات</h2>
+        </div>
+    </header>
+    <main>
+        <section id="invoice">
+            <div class="invoice-header">
+                <h2>فاتورة حجز رسمية</h2>
+                <p>رقم الفاتورة: <span id="invoice-number">INV-LARE4Y8I5</span></p>
+                <p>تاريخ الإصدار: <span id="invoice-date">٢٠٢٥/٤/٣</span></p>
+            </div>
+            <div class="invoice-tags">
+                <div class="tag">وثيقة رسمية ٢٠٢٤</div>
+                <div class="tag">فاتورة معتمدة حكومة سلطنة عمان</div>
+            </div>
+            <div class="invoice-status">
+                <div class="status-item">موثقة إلكترونياً</div>
+                <div class="status-item">معتمدة رسمياً</div>
+                <div class="status-item">وثيقة آمنة</div>
+            </div>
+            <div class="invoice-details">
+                <p>رقم الحجز: <span id="booking-number"></span></p>
+                <p>اسم العميل: <span id="full-name"></span></p>
+                <p>رقم الهاتف: <span id="phone-number"></span></p>
+                <p>البريد الإلكتروني: <span id="email"></span></p>
+                <p>عدد الضيوف: <span id="number-of-people"></span></p>
+                <p>تاريخ الحجز: <span id="booking-date"></span></p>
+                <p>قيمة الحجز: <span id="booking-value"></span></p>
+            </div>
+            <button onclick="location.href='banks.html'">اختيار البنك</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ نظام حجز الشاليهات - سلطنة عمان</p>
+    </footer>
+    <script>
+        // Fetch query parameters and display them in the invoice
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('full-name').textContent = urlParams.get('full-name');
+        document.getElementById('booking-number').textContent = urlParams.get('booking-number');
+        document.getElementById('phone-number').textContent = urlParams.get('phone-number');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('number-of-people').textContent = urlParams.get('number-of-people');
+        document.getElementById('booking-date').textContent = urlParams.get('booking-date');
+        document.getElementById('booking-value').textContent = urlParams.get('booking-value');
+    </script>
+</body>
+</html>
