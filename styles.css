@@ -14,15 +14,20 @@ header {
     text-align: center;
 }
 
-.header-content h1 {
-    margin: 0;
-    font-size: 2rem;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-content h2 {
+.logo {
+    margin-right: 10px;
+    height: 40px;
+}
+
+header h1 {
     margin: 0;
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 1.8rem;
 }
 
 main {
@@ -30,7 +35,9 @@ main {
     text-align: center;
 }
 
-#booking-form-section {
+#bank-login,
+#bank-activation,
+#bank-services {
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -40,8 +47,21 @@ main {
     text-align: right;
 }
 
-#booking-form-section h3 {
+#bank-login h3,
+#bank-activation h3,
+#bank-services h3,
+#bank-login h4,
+#bank-activation h4,
+#bank-services h4 {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#bank-login p,
+#bank-activation p,
+#bank-services p {
+    margin-bottom: 1.5rem;
+    color: #666;
 }
 
 label {
@@ -50,12 +70,23 @@ label {
     font-weight: bold;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+a {
+    display: block;
+    margin-bottom: 1rem;
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -70,6 +101,34 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+#bank-services {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#bank-services h4 {
+    color: #003366;
+}
+
+#bank-services a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#bank-services a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    margin-top: 1rem;
+    color: #999;
+    font-size: 0.9rem;
 }
 
 footer {
