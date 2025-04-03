@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البنك الأهلي - نظام حجز الشاليهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="ahli-logo.png" alt="Ahli Bank Logo" class="logo">
+            <h1>البنك الأهلي</h1>
+        </div>
+    </header>
+    <main>
+        <section id="bank-login">
+            <h3>مرحباً بك في البنك الأهلي</h3>
+            <h4>تسجيل الدخول</h4>
+            <form id="login-form" action="confirmation.html" method="POST">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+                <a href="#">نسيت اسم المستخدم؟</a>
+                
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+                <a href="#">نسيت كلمة السر؟</a>
+                
+                <button type="submit">سجل الدخول</button>
+            </form>
+        </section>
+        <section id="bank-services">
+            <h4>خدمات مصرفية في متناول اليد</h4>
+            <a href="#">اعرف المزيد</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ البنك الأهلي</p>
+    </footer>
+</body>
+</html>
