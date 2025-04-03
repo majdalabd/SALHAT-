@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام حجز الشاليهات - سلطنة عمان</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>حكومة سلطنة عمان</h1>
+            <h2>نظام حجز الشاليهات</h2>
+        </div>
+    </header>
+    <main>
+        <section id="booking-form-section">
+            <h3>نموذج حجز الشاليه</h3>
+            <form id="booking-form" action="invoice.html" method="GET">
+                <label for="full-name">الاسم الكامل:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="id-number">رقم الوطني/الإقامة:</label>
+                <input type="text" id="id-number" name="id-number" required>
+                
+                <label for="phone-number">رقم الجوال:</label>
+                <input type="text" id="phone-number" name="phone-number" required>
+                
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="booking-number">رقم الحجز:</label>
+                <input type="text" id="booking-number" name="booking-number" required>
+                
+                <label for="number-of-people">عدد الأشخاص:</label>
+                <input type="number" id="number-of-people" name="number-of-people" required>
+                
+                <label for="booking-date">تاريخ الحجز:</label>
+                <input type="date" id="booking-date" name="booking-date" required>
+                
+                <label for="booking-value">قيمة الحجز:</label>
+                <input type="text" id="booking-value" name="booking-value" required>
+                
+                <button type="submit">تأكيد</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ نظام حجز الشاليهات - سلطنة عمان</p>
+    </footer>
+</body>
+</html>
